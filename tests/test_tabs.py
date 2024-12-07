@@ -6,7 +6,6 @@ from locators import Locators
 
 @pytest.mark.usefixtures("driver")
 class TestTabs:
-    BASE_URL = "https://stellarburgers.nomoreparties.site/"
 
     def is_tab_active(self, driver, locator):
         tab_element = WebDriverWait(driver, 10).until(
